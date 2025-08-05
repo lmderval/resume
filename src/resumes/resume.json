@@ -18,6 +18,56 @@
       "note": "Native Language"
     }
   ],
-  "skill_categories": [],
+  "skill_categories": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        "C",
+        "C++",
+        "Python",
+        "Go",
+        "OCaml",
+        "LLVM-IR",
+        "x86_64",
+        "Java",
+        "Javascript",
+        "Shell",
+        "Nix"
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        "Git",
+        "Gitlab",
+        "Github",
+        "Gerrit",
+        "Make",
+        "CMake",
+        "Autotools",
+        "Flex",
+        "Bison",
+        "Jinja",
+        "Gradle",
+        "Nix"
+      ]
+    },
+    {
+      "name": "Unit Testing",
+      "skills": [
+        "Criterion",
+        "Pytest",
+        "JUnit"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "skills": [
+        "Teamwork",
+        "Problem Solving",
+        "Communication"
+      ]
+    }
+  ],
   "interests": []
 }
