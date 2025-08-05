@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
+        <title>{{ resume.name }}'s Resume</title>
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Roboto Font -->
@@ -19,7 +19,8 @@
                 <!-- Title -->
                 <div class="col-md-7">
                     <div class="profile-title text-center">
-                        <!-- Insert profile here -->
+                        <h2>{{ resume.name }}</h2>
+                        <h5>{{ resume.description }}</h5>
                     </div>
                 </div>
 
@@ -37,7 +38,18 @@
                     <!-- Languages -->
                     <div class="languages">
                         <h3>Languages</h3>
-                        <!-- Insert languages here -->
+{% for language in resume.languages %}
+                        <div class="mb-3">
+                            <p class="progress-label">{{ language.name }}</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ language.level }}%;" aria-valuenow="{{ language.level }}"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+    {% if language.note %}
+                            <p class="note">{{ language.note }}</p>
+    {% endif %}
+                        </div>
+{% endfor %}
                     </div>
 
                     <hr>

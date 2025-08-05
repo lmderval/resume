@@ -6,7 +6,18 @@
   "certificates": [],
   "experiences": [],
   "projects": [],
-  "languages": [],
+  "languages": [
+    {
+      "name": "English",
+      "level": 85,
+      "note": "CEFR: C1, TOEIC: 945"
+    },
+    {
+      "name": "French",
+      "level": 100,
+      "note": "Native Language"
+    }
+  ],
   "skill_categories": [],
   "interests": []
 }
