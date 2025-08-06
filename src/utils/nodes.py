@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from typing import List, Optional, Self
+from typing import List, Optional
 
 
 @dataclass
@@ -22,7 +22,7 @@ class Certificate:
 @dataclass
 class Task:
     name: str
-    subtasks: List[str | Self]
+    subtasks: List[str]
 
 
 @dataclass

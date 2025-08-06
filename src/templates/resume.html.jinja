@@ -142,7 +142,33 @@
                     <!-- Experience -->
                     <div class="experience">
                         <h3>Experience</h3>
-                        <!-- Insert experiences here -->
+{% for experience in resume.experiences %}
+                        <p>
+                            <strong>{{ experience.name }}</strong>
+    {% if not experience.end %}
+                            ({{ experience.begin }} - Now)
+    {% elif experience.begin == experience.end %}
+                            ({{ experience.begin}})
+    {% else %}
+                            ({{ experience.begin }} - {{ experience.end }})
+    {% endif %}
+                            - {{ experience.where }}
+                        </p>
+                        <ul>
+    {% for task in experience.tasks %}
+        {% if task is string %}
+                            <li>{{ task }}</li>
+        {% else %}
+                            <li><strong>{{ task.name }}:</strong></li>
+                            <ul>
+            {% for subtask in task.subtasks %}
+                                <li>{{ subtask }}</li>
+            {% endfor %}
+                            </ul>
+        {% endif %}
+    {% endfor %}
+                        </ul>
+{% endfor %}
                     </div>
 
                     <hr>

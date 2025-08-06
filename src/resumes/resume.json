@@ -43,7 +43,41 @@
       "year": 2018
     }
   ],
-  "experiences": [],
+  "experiences": [
+    {
+      "name": "Teaching Assistant",
+      "where": "EPITA, Le Kremlin-Bicêtre",
+      "begin": "September 2024",
+      "tasks": [
+        {
+          "name": "Tiger Maintainer",
+          "subtasks": [
+            "Maintaining the Tiger Compiler reference",
+            "Explaining compiler notions to students",
+            "Helped students writing their own compiler and implementing their own extension"
+          ]
+        },
+        {
+          "name": "Respo 42sh",
+          "subtasks": [
+            "Explaining advanced C notions to students",
+            "Helping students writing their own POSIX Shell from scratch"
+          ]
+        },
+        "Debugging and helping third year students in C, C++ and Java"
+      ]
+    },
+    {
+      "name": "Engineering Intern",
+      "where": "Arista, Dublin",
+      "begin": "September 2024",
+      "end": "January 2025",
+      "tasks": [
+        "REST API development in Golang with Huma",
+        "Templated REST API generation in Python using Jinja and FastAPI"
+      ]
+    }
+  ],
   "projects": [],
   "languages": [
     {
