@@ -126,7 +126,15 @@
 
                     <div class="certificates">
                         <h3>Certificates</h3>
-                        <!-- Insert certificates here -->
+{% for certificate in resume.certificates %}
+                        <p>
+                            <strong>{{ certificate.name }}</strong>
+    {% if certificate.note %}
+                            {{ certificate.note }}
+    {% endif %}
+                            ({{ certificate.year }})
+                        </p>
+{% endfor %}
                     </div>
 
                     <hr>

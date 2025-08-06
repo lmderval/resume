@@ -22,7 +22,27 @@
       "topics": []
     }
   ],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "TOEIC",
+      "note": "with a score of 945",
+      "year": 2023
+    },
+    {
+      "name": "High School Diploma",
+      "note": "in Mathematics and Physics with honors",
+      "year": 2021
+    },
+    {
+      "name": "Basic Life Support",
+      "year": 2021
+    },
+    {
+      "name": "General Certificate of Secondary Education",
+      "note": "with honors",
+      "year": 2018
+    }
+  ],
   "experiences": [],
   "projects": [],
   "languages": [
