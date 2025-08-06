@@ -78,7 +78,49 @@
       ]
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "name": "Tiger",
+      "description": "Developed a compiler based on the book <em>\"Modern Compiler Implementation\"</em> from Andrew Appel in a team of four students",
+      "personal": false,
+      "ongoing": false,
+      "languages": [
+        "C++",
+        "Flex",
+        "Bison",
+        "LLVM"
+      ]
+    },
+    {
+      "name": "42sh",
+      "description": "Developed a POSIX Shell in a team of four students",
+      "personal": false,
+      "ongoing": false,
+      "languages": [
+        "C"
+      ]
+    },
+    {
+      "name": "Compiler Playground",
+      "description": "Development of a compiler to learn how to implement various features",
+      "personal": true,
+      "ongoing": true,
+      "languages": [
+        "OCaml",
+        "Rust",
+        "C"
+      ]
+    },
+    {
+      "name": "SnakeASM",
+      "description": "Developed a Snake game in assembly",
+      "personal": true,
+      "ongoing": false,
+      "languages": [
+        "x86_64"
+      ]
+    }
+  ],
   "languages": [
     {
       "name": "English",

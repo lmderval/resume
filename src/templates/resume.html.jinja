@@ -176,7 +176,27 @@
                     <!-- Projects -->
                     <div class="projects">
                         <h3>Projects</h3>
-                        <!-- Insert projects here -->
+{% for project in resume.projects %}
+                        <p>
+                            <strong>{{ project.name }}</strong>
+    {%- if project.personal %}
+                            (Personal project)
+    {%- endif %}
+    {%- if project.ongoing %}
+                            (Ongoing)
+    {%- endif -%}
+                            <strong>:</strong>
+                            {{ project.description }}
+                            <em>(
+    {%- for language in project.languages -%}
+                                {{ language }}
+        {%- if not loop.last -%}
+                                ,
+        {% endif %}
+    {%- endfor -%}
+                            )</em>
+                        </p>
+{% endfor %}
                     </div>
 
                     <hr>
