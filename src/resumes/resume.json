@@ -2,7 +2,26 @@
   "name": "Louis-Maël DERVAL",
   "description": "Internship in Compiler Design",
   "profile": "Motivated student in Computer Science with a view to becomming a Compiler Engineer, I am looking for a six-month internship, starting in the end of February 2026, in the field of Compiler Design to apply my knowledge, learn more about compilers and develop my skills.",
-  "education": [],
+  "education": [
+    {
+      "name": "EPITA",
+      "short_description": "Engineering School in Computer Intelligence",
+      "begin": "2023",
+      "topics": [
+        "Language theory, compiler design and implementation, lambda calculus and type systems",
+        "IT development, database handling and unit and functional testing",
+        "Teamwork, communication and project management",
+        "Quantum Computing"
+      ]
+    },
+    {
+      "name": "Lycée Clemenceau",
+      "short_description": "Two-years undergraduate intensive studies in Physics and Chemistry to prepare for competitive entry exams to engineering schools",
+      "begin": "2021",
+      "end": "2023",
+      "topics": []
+    }
+  ],
   "certificates": [],
   "experiences": [],
   "projects": [],

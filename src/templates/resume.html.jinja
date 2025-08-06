@@ -100,7 +100,26 @@
                     <!-- Education -->
                     <div class="education">
                         <h3>Education</h3>
-                        <!-- Insert schools here -->
+{% for school in resume.education %}
+                        <p>
+                            <strong>{{ school.name }}</strong>
+    {% if not school.end %}
+                            ({{ school.begin }} - Now)
+    {% elif school.begin == school.end %}
+                            ({{ school.begin}})
+    {% else %}
+                            ({{ school.begin }} - {{ school.end }})
+    {% endif %}
+                            - {{ school.short_description }}
+                        </p>
+    {% if school.topics %}
+                        <ul>
+        {% for topic in school.topics %}
+                            <li>{{ topic }}</li>
+        {% endfor %}
+                        </ul>
+    {% endif %}
+{% endfor %}
                     </div>
 
                     <hr>
