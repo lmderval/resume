@@ -34,7 +34,11 @@
 
             <div class="row">
                 <!-- Side Panel -->
+{% if resume.variant %}
+                <div class="col-md-4 side-panel blue">
+{% else %}
                 <div class="col-md-4 side-panel">
+{% endif %}
                     <!-- Languages -->
                     <div class="languages">
                         <h3>Languages</h3>

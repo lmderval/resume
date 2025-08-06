@@ -197,5 +197,6 @@
       "name": "Analog Electronics",
       "icon": "microchip"
     }
-  ]
+  ],
+  "variant": true
 }

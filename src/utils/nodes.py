@@ -74,3 +74,4 @@ class Resume:
     languages: List[Language]
     skill_categories: List[SkillCategory]
     interests: List[Interest]
+    variant: Optional[bool] = False
