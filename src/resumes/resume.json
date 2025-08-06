@@ -69,5 +69,18 @@
       ]
     }
   ],
-  "interests": []
+  "interests": [
+    {
+      "name": "Compilers and Interpreters",
+      "icon": "gear"
+    },
+    {
+      "name": "Electric Guitar",
+      "icon": "guitar"
+    },
+    {
+      "name": "Analog Electronics",
+      "icon": "microchip"
+    }
+  ]
 }

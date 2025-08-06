@@ -79,6 +79,11 @@
                     <div class="interests">
                         <h3>Interests</h3>
                         <!-- Insert interests here -->
+                        <ul>
+{% for interest in resume.interests %}
+                            <li><i class="fas fa-{{ interest.icon }}"></i> {{ interest.name }}</li>
+{% endfor %}
+                        </ul>
                     </div>
                 </div>
 
