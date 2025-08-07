@@ -27,7 +27,16 @@
                 <!-- Personal Information -->
                 <div class="col-md-5">
                     <div class="personal-info">
-                        <!-- Insert personal information here -->
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> {{ resume.information.email }}</li>
+                            <li><i class="fas fa-phone"></i> {{ resume.information.phone }}</li>
+{% if resume.information.linkedin %}
+                            <li><i class="fab fa-linkedin"></i> {{ resume.information.linkedin }}</li>
+{% endif %}
+{% if resume.information.github %}
+                            <li><i class="fab fa-github"></i> {{ resume.information.github }}</li>
+{% endif %}
+                        </ul>
                     </div>
                 </div>
             </div>
