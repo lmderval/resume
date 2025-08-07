@@ -4,6 +4,14 @@ from typing import List, Optional
 
 
 @dataclass
+class Information:
+    email: str
+    phone: str
+    linkedin: Optional[str]
+    github: Optional[str]
+
+
+@dataclass
 class School:
     name: str
     short_description: str
@@ -67,6 +75,7 @@ class Resume:
     name: str
     description: str
     profile: str
+    information: Information
     education: List[School]
     certificates: List[Certificate]
     experiences: List[Experience]

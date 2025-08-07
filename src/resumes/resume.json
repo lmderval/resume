@@ -2,6 +2,12 @@
   "name": "Louis-Maël DERVAL",
   "description": "Internship in Compiler Design",
   "profile": "Motivated student in Computer Science with a view to becomming a Compiler Engineer, I am looking for a six-month internship, starting in the end of February 2026, in the field of Compiler Design to apply my knowledge, learn more about compilers and develop my skills.",
+  "information": {
+    "email": "louis-mael.derval@epita.fr",
+    "phone": "+33 6 69 51 23 39",
+    "linkedin": "linkedin.com/in/louis-mael-derval",
+    "github": "github.com/lmderval"
+  },
   "education": [
     {
       "name": "EPITA",
@@ -198,5 +204,5 @@
       "icon": "microchip"
     }
   ],
-  "variant": true
+  "variant": false
 }
