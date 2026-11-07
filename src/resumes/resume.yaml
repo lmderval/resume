@@ -1,0 +1,177 @@
+name: Louis-Maël DERVAL
+description: |
+  Student Intern in Computer Science<br>
+  Looking for a <b>Compiler Engineer</b> position
+profile: |
+  Final year student in computer science at EPITA and intern in a compiler team
+  at Arista Networks, I am looking for a permanent position as a compiler
+  engineer. Serious and motivated, I am eager to learn more in the field of
+  compilation.
+information:
+  email: louismaelderval@gmail.com
+  phone: +33 1 23 45 67 89
+  linkedin: linkedin.com/in/louis-mael-derval
+  github: github.com/lmderval
+education:
+- name: EPITA
+  short_description: Engineering School in Computer Intelligence
+  begin: '2023'
+  topics:
+    - Programming languages theory and history
+    - Compilation theory and compiler implementation
+    - Lambda calculus, type systems and program verification with Rocq
+    - Quantum computing
+- name: Lycée Clemenceau
+  short_description: |
+    Two-years undergraduate intensive studies in Physics and Chemistry to
+    prepare for competitive entry exams to engineering schools
+  begin: '2021'
+  end: '2023'
+  topics: []
+certificates:
+- name: TOEIC
+  note: with a score of 945
+  year: 2023
+- name: High School Diploma
+  note: in Mathematics and Physics with honors
+  year: 2021
+experiences:
+- name: Engineering intern
+  where: Arista Networks, Dublin
+  begin: February 2026
+  tasks:
+  - Improving the reactor system implemented by an internal compiler written in
+    C++
+  - Improving switches <em>'show'</em> commands rendering with Minijinja
+    templates
+- name: Teaching Assistant
+  where: EPITA, Le Kremlin-Bicêtre
+  begin: September 2024
+  end: February 2026
+  tasks:
+  - name: Tiger Maintainer
+    subtasks:
+    - Maintaining the EPITA Tiger Compiler reference
+    - Explaining compiler notions to students
+    - Helping students writing their own compiler and implementing their own
+      language extension
+  - name: Respo 42sh
+    subtasks:
+    - Explaining advanced C notions to students
+    - Helping students writing their own POSIX Shell from scratch
+  - Debugging and helping third year students in C, C++, Java and SQL
+- name: Engineering Intern
+  where: Arista Networks, Dublin
+  begin: September 2024
+  end: January 2025
+  tasks:
+  - Developing REST API in Go with Huma
+  - Improving a templated REST API generator in Python using Jinja2 and FastAPI
+projects:
+- name: Tiger
+  description: |
+    Developed a compiler based on the book <em>"Modern Compiler Implementation"</em>
+    by Andrew Appel in a team of four students
+  personal: false
+  ongoing: false
+  languages:
+  - C++
+  - Flex
+  - Bison
+  - LLVM
+  - IA32
+  - ARM32
+  - MIPS32
+- name: 42sh
+  description: Developed a POSIX compliant Shell in a team of four students
+  personal: false
+  ongoing: false
+  languages:
+  - C
+  - Shell
+  - Autotools
+- name: MimiQ Hackathon
+  description: |
+    Developed a quantum compiler toolchain targetting neutral atom quantum
+    processors
+  personal: false
+  ongoing: false
+  languages:
+  - Python
+  - Julia
+  - MimiQ
+  - Docker
+- name: Quantum Simulator
+  description: |
+    Developed a vector state quantum simulator in a team of three students
+  personal: false
+  ongoing: false
+  languages:
+  - C++
+- name: HPC
+  description: |
+    Developed a matrix library with optimized and parallelized operations on CPU
+  personal: false
+  ongoing: false
+  languages:
+  - C
+  - OpenMP
+  - Autotools
+languages:
+- name: English
+  level: 0
+  note: 'CEFR: C1, TOEIC: 945'
+- name: French
+  level: 0
+  note: Native Language
+skill_categories:
+- name: Programming Languages
+  skills:
+  - C
+  - C++
+  - Python
+  - Go
+  - OCaml
+  - LLVM-IR
+  - x86_64
+  - Java
+  - Shell
+  - Nix
+- name: Build Systems
+  skills:
+  - Make
+  - Autotools
+  - CMake
+  - Gradle
+- name: Versioning and Reviewing
+  skills:
+  - Git
+  - Gitlab
+  - Github
+  - Gerrit
+- name: Tools
+  skills:
+  - Flex
+  - Bison
+  - Jinja
+  - Nix
+  - Rocq
+- name: Unit Testing
+  skills:
+  - Criterion
+  - GoogleTest
+  - Pytest
+  - JUnit
+- name: Soft Skills
+  skills:
+  - Teamwork
+  - Problem Solving
+  - Communication
+interests:
+- name: Compilers and Interpreters
+  icon: gear
+- name: Electric Guitar
+  icon: guitar
+- name: Analog Electronics
+  icon: microchip
+variant: true

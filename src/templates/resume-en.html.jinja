@@ -54,10 +54,12 @@
 {% for language in resume.languages %}
                         <div class="mb-3">
                             <p class="progress-label">{{ language.name }}</p>
+    {% if language.level %}
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: {{ language.level }}%;" aria-valuenow="{{ language.level }}"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+    {% endif %}
     {% if language.note %}
                             <p class="note">{{ language.note }}</p>
     {% endif %}
@@ -202,7 +204,7 @@
                             {{ project.description }}
                             <em>(
     {%- for language in project.languages -%}
-                                {{ language }}
+                                <span style="white-space: nowrap;">{{ language }}</span>
         {%- if not loop.last -%}
                                 ,
         {% endif %}

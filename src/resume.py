@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 
 from jinja2 import Environment, FileSystemLoader
 
-import json
+import yaml
 from dacite import from_dict
 from utils.nodes import Resume
 
@@ -19,10 +19,10 @@ def main(*, path: str):
         loader=FileSystemLoader(templates),
         keep_trailing_newline=True,
     )
-    template_resume = env.get_template("resume.html.jinja")
+    template_resume = env.get_template("resume-fr.html.jinja")
 
     with open(path, "r") as file:
-        data = json.loads(file.read())
+        data = yaml.safe_load(file)
         resume_data = from_dict(Resume, data)
 
     os.makedirs(generated, exist_ok=True)

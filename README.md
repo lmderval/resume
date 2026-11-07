@@ -1,3 +1,3 @@
 # Resume
 
-A tool to convert JSON like inputs into resumes.
+A tool to convert YAML inputs into resumes.

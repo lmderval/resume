@@ -26,6 +26,7 @@
                 python
                 jinja2
                 dacite
+                pyyaml
               ];
           };
           default = self.packages.${system}.resume;
