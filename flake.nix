@@ -26,7 +26,8 @@
             installPhase = ''
               runHook preInstall
               mkdir -p $out/lib/resume $out/bin
-              cp -r src/{resume.py,styles,templates,utils} $out/lib/resume/
+              cp -r src/{resume.py,styles,templates,utils,translations} \
+                $out/lib/resume/
               makeWrapper ${pythonEnv}/bin/python $out/bin/resume \
                 --add-flags "$out/lib/resume/resume.py"
               runHook postInstall

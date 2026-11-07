@@ -1,0 +1,20 @@
+title: "CV de %s"
+
+side_panel:
+  languages: "Langues"
+  skills: "Compétences"
+  interests: "Centres d'intérêt"
+
+main:
+  profile: "Profil"
+  education: "Formation"
+  certificates: "Diplômes"
+  experience: "Expériences"
+  projects: "Projets"
+
+date:
+  present: "Maintenant"
+
+project:
+  personal: "Projet personnel"
+  ongoing: "En cours"

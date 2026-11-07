@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ resume.name }}'s Resume</title>
+        <title>{{ translation.title | format(resume.name) }}</title>
         <!-- Bootstrap CSS -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Roboto Font -->
@@ -50,7 +50,7 @@
 {% endif %}
                     <!-- Languages -->
                     <div class="languages">
-                        <h3>Languages</h3>
+                        <h3>{{ translation.side_panel.languages }}</h3>
 {% for language in resume.languages %}
                         <div class="mb-3">
                             <p class="progress-label">{{ language.name }}</p>
@@ -71,7 +71,7 @@
 
                     <!-- Skills -->
                     <div class="skills">
-                        <h3>Skills</h3>
+                        <h3>{{ translation.side_panel.skills }}</h3>
 {% for skill_category in resume.skill_categories %}
                         <div class="mb-3">
                             <p class="skill-label">{{ skill_category.name }}</p>
@@ -91,7 +91,7 @@
 
                     <!-- Interests -->
                     <div class="interests">
-                        <h3>Interests</h3>
+                        <h3>{{ translation.side_panel.interests }}</h3>
                         <ul>
 {% for interest in resume.interests %}
                             <li><i class="fas fa-{{ interest.icon }}"></i> {{ interest.name }}</li>
@@ -106,7 +106,7 @@
 
                     <!-- Profile -->
                     <div class="profile">
-                        <h3>Profile</h3>
+                        <h3>{{ translation.main.profile }}</h3>
                         <p>{{ resume.profile }}</p>
                     </div>
 
@@ -114,12 +114,12 @@
 
                     <!-- Education -->
                     <div class="education">
-                        <h3>Education</h3>
+                        <h3>{{ translation.main.education }}</h3>
 {% for school in resume.education %}
                         <p>
                             <strong>{{ school.name }}</strong>
     {% if not school.end %}
-                            ({{ school.begin }} - Now)
+                            ({{ school.begin }} - {{ translation.date.present }})
     {% elif school.begin == school.end %}
                             ({{ school.begin}})
     {% else %}
@@ -140,7 +140,7 @@
                     <hr>
 
                     <div class="certificates">
-                        <h3>Certificates</h3>
+                        <h3>{{ translation.main.certificates }}</h3>
 {% for certificate in resume.certificates %}
                         <p>
                             <strong>{{ certificate.name }}</strong>
@@ -156,12 +156,12 @@
 
                     <!-- Experience -->
                     <div class="experience">
-                        <h3>Experience</h3>
+                        <h3>{{ translation.main.experience }}</h3>
 {% for experience in resume.experiences %}
                         <p>
                             <strong>{{ experience.name }}</strong>
     {% if not experience.end %}
-                            ({{ experience.begin }} - Now)
+                            ({{ experience.begin }} - {{ translation.date.present }})
     {% elif experience.begin == experience.end %}
                             ({{ experience.begin}})
     {% else %}
@@ -190,15 +190,15 @@
 
                     <!-- Projects -->
                     <div class="projects">
-                        <h3>Projects</h3>
+                        <h3>{{ translation.main.projects }}</h3>
 {% for project in resume.projects %}
                         <p>
                             <strong>{{ project.name }}</strong>
     {%- if project.personal %}
-                            (Personal project)
+                            ({{ translation.project.personal }})
     {%- endif %}
     {%- if project.ongoing %}
-                            (Ongoing)
+                            ({{ translation.project.ongoing }})
     {%- endif -%}
                             <strong>:</strong>
                             {{ project.description }}

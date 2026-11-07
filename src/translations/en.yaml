@@ -1,0 +1,20 @@
+title: "%s's Resume"
+
+side_panel:
+  languages: "Languages"
+  skills: "Skills"
+  interests: "Interests"
+
+main:
+  profile: "Profile"
+  education: "Education"
+  certificates: "Certificates"
+  experience: "Experience"
+  projects: "Projects"
+
+date:
+  present: "Now"
+
+project:
+  personal: "Personal project"
+  ongoing: "Ongoing"
