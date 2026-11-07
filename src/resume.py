@@ -11,7 +11,7 @@ from dacite import from_dict
 from utils.nodes import Resume
 
 dir = Path(os.path.dirname(os.path.realpath(__file__)))
-cwd = Path('.')
+cwd = Path(".")
 
 
 def load_translation(language: str) -> dict:
@@ -40,11 +40,18 @@ def main(*, path: str, language: str | None):
     os.makedirs(generated, exist_ok=True)
 
     resume = generated / "resume.html"
+    if os.path.exists(resume):
+        os.remove(resume)
     with open(resume, "w") as file:
         file.write(template_resume.render(resume=resume_data,
                                           translation=translation))
+    os.chmod(resume, 0o444)
 
-    shutil.copy(styles / "resume.css", generated / "resume.css")
+    css = generated / "resume.css"
+    if os.path.exists(css):
+        os.remove(css)
+    shutil.copy(styles / "resume.css", css)
+    os.chmod(css, 0o444)
 
 
 if __name__ == "__main__":
