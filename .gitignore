@@ -3,3 +3,6 @@ __pycache__/
 
 # generator
 generated/
+
+# nix
+result

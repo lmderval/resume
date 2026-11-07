@@ -12,23 +12,37 @@
       let
         pkgs = import nixpkgs { inherit system; };
         pythonPackages = pkgs.python313Packages;
+        python = pythonPackages.python;
+        pythonEnv = python.withPackages (ps: with ps; [ jinja2 dacite pyyaml ]);
       in
       {
         formatter = pkgs.nixpkgs-fmt;
-        packages = {
+        packages = rec {
           resume = pkgs.stdenv.mkDerivation {
             pname = "resume";
             version = "0.0.0";
             src = self;
-            nativeBuildInputs =
-              with pythonPackages;
-              [
-                python
-                jinja2
-                dacite
-                pyyaml
-              ];
+            nativeBuildInputs = [ pkgs.makeWrapper ];
+            installPhase = ''
+              runHook preInstall
+              mkdir -p $out/lib/resume $out/bin
+              cp -r src/{resume.py,styles,templates,utils} $out/lib/resume/
+              makeWrapper ${pythonEnv}/bin/python $out/bin/resume \
+                --add-flags "$out/lib/resume/resume.py"
+              runHook postInstall
+            '';
           };
+          generated = pkgs.runCommand "resume-generated" { } ''
+            cp -r ${resume}/lib/resume workdir
+            chmod +w workdir
+            (
+              cd workdir
+              ${pythonEnv}/bin/python resume.py \
+                --path ${self}/src/resumes/resume.yaml
+            )
+            mkdir -p $out
+            cp workdir/generated/{resume.css,resume.html} $out/
+          '';
           default = self.packages.${system}.resume;
         };
       });

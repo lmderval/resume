@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import shutil
 
 from argparse import ArgumentParser
 
@@ -10,11 +11,13 @@ from dacite import from_dict
 from utils.nodes import Resume
 
 dir = Path(os.path.dirname(os.path.realpath(__file__)))
+cwd = Path('.')
 
 
 def main(*, path: str):
+    styles = dir / "styles"
     templates = dir / "templates"
-    generated = dir / "generated"
+    generated = cwd / "generated"
     env = Environment(
         loader=FileSystemLoader(templates),
         keep_trailing_newline=True,
@@ -30,6 +33,8 @@ def main(*, path: str):
     resume = generated / "resume.html"
     with open(resume, "w") as file:
         file.write(template_resume.render(resume=resume_data))
+
+    shutil.copy(styles / "resume.css", generated / "resume.css")
 
 
 if __name__ == "__main__":
