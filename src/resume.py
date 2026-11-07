@@ -55,9 +55,26 @@ def main(*, path: str, language: str | None):
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
-    parser.add_argument("--path", required=True, type=str)
-    parser.add_argument("--language", required=False, default=None, type=str)
+    parser = ArgumentParser(
+        description="Convert a YAML resume source file into an HTML resume."
+    )
+    parser.add_argument(
+        "--path",
+        required=True,
+        type=str,
+        help="Path to the YAML resume source file.",
+    )
+    parser.add_argument(
+        "--language",
+        required=False,
+        default=None,
+        type=str,
+        help=(
+            "ISO language code for UI strings (e.g. 'fr', 'en'). "
+            "Overrides the 'language' field in the YAML file. "
+            "Defaults to the value from the YAML file, or 'en' if not set."
+        ),
+    )
     args = parser.parse_args()
 
     main(path=args.path, language=args.language)
