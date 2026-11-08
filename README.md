@@ -16,6 +16,12 @@ Pass additional arguments after `--`:
 nix run . -- --path src/resumes/resume.yaml --language fr
 ```
 
+Pass `--variant` to override the side-panel colour variant:
+
+```sh
+nix run . -- --path src/resumes/resume.yaml --variant no
+```
+
 ### Build & run the executable
 
 ```sh
@@ -45,3 +51,4 @@ The resulting files are placed in `result/`.
 | `--help`, `-h` | No | — | Show the help message and exit. |
 | `--path PATH` | **Yes** | — | Path to the YAML resume source file. |
 | `--language LANG` | No | value from YAML or `en` | ISO language code for UI strings (e.g. `fr`, `en`). Overrides the `language` field in the YAML file. |
+| `--variant [yes\|no]` | No | value from YAML or `no` | Override the `variant` attribute (blue side panel). Defaults to the value from the YAML file, or `no` (`False`) if not set. |

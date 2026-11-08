@@ -20,7 +20,7 @@ def load_translation(language: str) -> dict:
         return yaml.safe_load(f)
 
 
-def main(*, path: str, language: str | None):
+def main(*, path: str, language: str | None, variant: str | None):
     styles = dir / "styles"
     templates = dir / "templates"
     generated = cwd / "generated"
@@ -36,6 +36,9 @@ def main(*, path: str, language: str | None):
 
     resolved_language = language or data.get("language", "en")
     translation = load_translation(resolved_language)
+
+    if variant is not None:
+        resume_data.variant = (variant == "yes")
 
     os.makedirs(generated, exist_ok=True)
 
@@ -75,6 +78,17 @@ if __name__ == "__main__":
             "Defaults to the value from the YAML file, or 'en' if not set."
         ),
     )
+    parser.add_argument(
+        "--variant",
+        required=False,
+        default=None,
+        choices=["yes", "no"],
+        help=(
+            "Override the 'variant' attribute from the YAML file. "
+            "Defaults to the value from the YAML file, or 'no' (False) "
+            "if not set."
+        ),
+    )
     args = parser.parse_args()
 
-    main(path=args.path, language=args.language)
+    main(path=args.path, language=args.language, variant=args.variant)
