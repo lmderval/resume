@@ -39,7 +39,7 @@
             (
               cd workdir
               ${pythonEnv}/bin/python resume.py \
-                --path ${self}/src/resumes/resume.yaml
+                --path ${self}/src/resumes/resume-en.yaml
             )
             mkdir -p $out
             cp workdir/generated/{resume.css,resume.html} $out/

@@ -1,0 +1,202 @@
+language: fr
+name: Louis-Maël DERVAL
+description: |
+  Ingénieur logiciel junior<br>
+  À la recherche d'un poste d'<b>ingénieur logiciel</b>
+profile: |
+  Diplômé de l'EPITA avec une expérience pratique chez Arista Networks en
+  programmation système, outillage de compilation et services backend (C++, Go,
+  Python). Fort de solides bases algorithmiques et d'une expérience de tutorat
+  technique, je recherche un poste d'ingénieur logiciel pour concevoir des
+  logiciels fiables et performants.
+information:
+  email: louismaelderval@gmail.com
+  phone: +33 1 23 45 67 89
+  linkedin: linkedin.com/in/louis-mael-derval
+  github: github.com/lmderval
+education:
+- name: EPITA
+  short_description: École d'ingénieurs en informatique
+  begin: '2023'
+  end: '2026'
+  topics:
+    - Théorie des langages de programmation et histoire
+    - Théorie de la compilation et implémentation de compilateurs
+    - Lambda-calcul, systèmes de types et vérification de programmes avec Rocq
+    - Calcul quantique, calcul haute performance (HPC)
+- name: Lycée Clemenceau
+  short_description: |
+    Classes préparatoires aux grandes écoles (PCSI / PC) en Physique et Chimie,
+    préparation aux concours d'entrée des écoles d'ingénieurs
+  begin: '2021'
+  end: '2023'
+  topics: []
+certificates:
+- name: Diplôme d'ingénieur
+  note: majeure Quantique
+  year: 2026
+- name: TOEIC
+  note: score de 945
+  year: 2023
+- name: Baccalauréat
+  note: spécialités Mathématiques et Physique, mention Très Bien
+  year: 2021
+experiences:
+- name: Stagiaire ingénieur
+  where: Arista Networks, Dublin
+  begin: Février 2026
+  tasks:
+  - Maintenance d'un compilateur pour langage de modélisation orienté état en
+    C++
+  - Amélioration du rendu des commandes <em>'show'</em> sur switchs avec des
+    templates Minijinja
+- name: Assistant pédagogique
+  where: EPITA, Le Kremlin-Bicêtre
+  begin: Septembre 2024
+  end: Février 2026
+  tasks:
+  - name: Responsable compilateur Tiger
+    subtasks:
+    - Maintenance de la référence du compilateur Tiger d'EPITA
+    - Enseignement des concepts de compilation aux étudiants
+    - Encadrement des étudiants dans l'écriture de leur compilateur et
+      l'implémentation de leurs extensions de langage
+  - name: Responsable 42sh
+    subtasks:
+    - Enseignement des concepts avancés en C aux étudiants
+    - Encadrement des étudiants dans la conception d'un shell POSIX à partir de
+      zéro
+  - Aide au débogage et accompagnement des étudiants de 3e année en C, C++, Java
+    et SQL
+- name: Stagiaire ingénieur
+  where: Arista Networks, Dublin
+  begin: Septembre 2024
+  end: Janvier 2025
+  tasks:
+  - Développement d'une API REST en Go avec Huma
+  - Amélioration d'un générateur d'API REST basé sur des templates en Python
+    avec Jinja2 et FastAPI
+projects:
+- name: Tiger
+  description: |
+    Développement d'un compilateur basé sur le livre <em>"Modern Compiler
+    Implementation"</em> d'Andrew Appel, au sein d'une équipe de quatre
+    étudiants
+  personal: false
+  ongoing: false
+  languages:
+  - C++
+  - Flex
+  - Bison
+  - LLVM
+  - IA32
+  - ARM32
+  - MIPS32
+- name: 42sh
+  description: |
+    Développement d'un shell conforme à la norme POSIX au sein d'une équipe de
+    quatre étudiants
+  personal: false
+  ongoing: false
+  languages:
+  - C
+  - Shell
+  - Autotools
+- name: Arborist
+  description: |
+    Développement d'un DSL visant à accélérer la conception du front-end d'un
+    compilateur
+  personal: true
+  ongoing: true
+  languages:
+  - Rust
+  - Minijinja
+  - C++
+- name: MimiQ Hackathon avec QPerfect
+  description: |
+    Développement d'une chaîne de compilation quantique ciblant des processeurs
+    quantiques à atomes neutres
+  personal: false
+  ongoing: false
+  languages:
+  - Python
+  - Julia
+  - MimiQ
+  - Docker
+- name: Simulateur quantique
+  description: |
+    Développement d'un simulateur quantique à vecteurs d'états au sein d'une
+    équipe de trois étudiants
+  personal: false
+  ongoing: false
+  languages:
+  - C++
+- name: HPC
+  description: |
+    Développement d'une bibliothèque de calcul matriciel avec opérations
+    optimisées et parallélisées sur CPU
+  personal: false
+  ongoing: false
+  languages:
+  - C
+  - OpenMP
+  - Autotools
+languages:
+- name: Français
+  level: 0
+  note: Langue maternelle
+- name: Anglais
+  level: 0
+  note: 'CECRL : C1, TOEIC : 945'
+skill_categories:
+- name: Langages de programmation
+  skills:
+  - C
+  - C++
+  - Python
+  - Rust
+  - Shell
+  - Go
+  - Java
+  - JavaScript
+  - Nix
+  - LLVM-IR
+  - x86_64
+- name: Systèmes de build
+  skills:
+  - Make
+  - Autotools
+  - CMake
+  - Gradle
+- name: Gestion de versions et revue
+  skills:
+  - Git
+  - Gitlab
+  - Github
+  - Gerrit
+- name: Outils
+  skills:
+  - Flex
+  - Bison
+  - Jinja
+  - Nix
+  - Rocq
+- name: Tests unitaires
+  skills:
+  - Criterion
+  - GoogleTest
+  - Pytest
+  - JUnit
+- name: Savoir-être
+  skills:
+  - Travail en équipe
+  - Résolution de problèmes
+  - Communication
+interests:
+- name: Compilateurs et interpréteurs
+  icon: gear
+- name: Guitare électrique
+  icon: guitar
+- name: Électronique analogique
+  icon: microchip
+variant: true
