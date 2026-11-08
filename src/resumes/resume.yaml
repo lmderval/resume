@@ -1,13 +1,13 @@
 language: en
 name: Louis-Maël DERVAL
 description: |
-  Student Intern in Computer Science<br>
-  Looking for a <b>Compiler Engineer</b> position
+  Junior Software Engineer<br>
+  Looking for a <b>Software Engineer</b> position
 profile: |
-  Final year student in computer science at EPITA and intern in a compiler team
-  at Arista Networks, I am looking for a permanent position as a compiler
-  engineer. Serious and motivated, I am eager to learn more in the field of
-  compilation.
+  EPITA software engineering graduate with hands-on experience at Arista Networks
+  in systems programming, compiler tooling, and backend services (C++, Go, Python).
+  Backed by strong algorithmic foundations and technical mentorship experience,
+  seeking a Software Engineer role to build reliable, high-performance software.
 information:
   email: louismaelderval@gmail.com
   phone: +33 1 23 45 67 89
@@ -17,11 +17,12 @@ education:
 - name: EPITA
   short_description: Engineering School in Computer Intelligence
   begin: '2023'
+  end: '2026'
   topics:
     - Programming languages theory and history
     - Compilation theory and compiler implementation
     - Lambda calculus, type systems and program verification with Rocq
-    - Quantum computing
+    - Quantum computing, high-performance computing
 - name: Lycée Clemenceau
   short_description: |
     Two-years undergraduate intensive studies in Physics and Chemistry to
@@ -30,6 +31,9 @@ education:
   end: '2023'
   topics: []
 certificates:
+- name: Master’s degree in engineering
+  note: in Quantum major
+  year: 2021
 - name: TOEIC
   note: with a score of 945
   year: 2023
@@ -41,8 +45,7 @@ experiences:
   where: Arista Networks, Dublin
   begin: February 2026
   tasks:
-  - Improving the reactor system implemented by an internal compiler written in
-    C++
+  - Maintaining a state-oriented modeling language compiler in C++
   - Improving switches <em>'show'</em> commands rendering with Minijinja
     templates
 - name: Teaching Assistant
@@ -66,7 +69,7 @@ experiences:
   begin: September 2024
   end: January 2025
   tasks:
-  - Developing REST API in Go with Huma
+  - Developing a REST API in Go with Huma
   - Improving a templated REST API generator in Python using Jinja2 and FastAPI
 projects:
 - name: Tiger
@@ -91,7 +94,16 @@ projects:
   - C
   - Shell
   - Autotools
-- name: MimiQ Hackathon
+- name: Arborist
+  description: |
+    Developing a DSL to help building the front-end of a compiler quicker
+  personal: true
+  ongoing: true
+  languages:
+  - Rust
+  - Minijinja
+  - C++
+- name: MimiQ Hackathon with QPerfect
   description: |
     Developed a quantum compiler toolchain targetting neutral atom quantum
     processors
@@ -131,13 +143,14 @@ skill_categories:
   - C
   - C++
   - Python
+  - Rust
+  - Shell
   - Go
-  - OCaml
+  - Java
+  - JavaScript
+  - Nix
   - LLVM-IR
   - x86_64
-  - Java
-  - Shell
-  - Nix
 - name: Build Systems
   skills:
   - Make
